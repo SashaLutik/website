@@ -1,0 +1,681 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #424242;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #686868;
+    ;
+    border-radius: 10px;
+}
+body{
+    margin: 0;
+    cursor: url(../assets/images/default.svg), default;
+    background-color: #14120F;
+    font-family: "Rubik one";
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+    cursor: url(../assets/images/pointer.svg), pointer;
+}
+button{
+    background-color: #14120F;
+    border: none;
+    cursor: url(../assets/images/pointer.svg), pointer;
+}
+p{
+    color: #fff;
+    font-size: 34px;
+}
+.container{
+    max-width: 1480px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+
+.header{
+    background-color: #420063;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 999;
+}
+.header__inner{
+    padding: 20px 0 10px 0;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo__img{
+    cursor: url(../assets/images/pointer.svg), pointer;
+}
+.logo__img2{
+    display: none;
+    cursor: url(../assets/images/pointer.svg), pointer;
+    
+}
+.button__head{
+    background-color: #420063;
+    color: #fff;
+    font-size: 24px;
+    font-family: "Rubik one";
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    transition: 0.3s;
+}
+
+.search1{
+    background-color: #fff;
+    width: 208px;
+    height: 47px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.searching{
+    padding: 0 30px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 47px;
+    border-radius: 90px;
+    
+}
+.search__txt{
+    outline: none;
+    font-size: 14px;
+    height: 35px;
+    width: 122px;
+    border-radius: 50px;
+    border: none;
+    font-family: "Rubik one";
+    transition: 0.3s;
+}
+.buttonsr{
+    background-color: #ffffff;
+    outline: none;
+    border-radius: 50px;
+    width: 50px;
+    border: none;
+    cursor: url(../assets/images/pointer.svg), pointer;
+}
+.search2{
+    display: none;
+}
+.buttonsr2{
+    background-color: #ffffff;
+    outline: none;
+    border-radius: 60px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    cursor: url(../assets/images/pointer.svg), pointer;
+}
+.buttonmm{
+    display: flex;
+    align-items: center;
+    background-color: #420063;
+    color: #fff;
+    font-size: 24px;
+    font-family: "Rubik one"; 
+}
+.buttonmm2{
+    display: none;
+    align-items: center;
+    background-color: #420063;
+    color: #fff;
+    font-size: 24px;
+    font-family: "Rubik one"; 
+}
+.link__registr{
+    padding-left: 20px;
+}
+
+.menu__btn{
+    display: none;
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.menu__btn span {
+    background-color: #ffffff;
+    height: 8px;
+    border-radius: 2px;
+    width: 100%;
+}
+.dropdown {
+    display: none;
+    position: fixed;
+    top: 0;
+    margin-top: 140px;
+    right: 0;
+    background-color: #5d018c;
+    border-radius: 0 0 10px 10px;
+    z-index: 998;
+}
+.menu__list{
+    padding: 20px 30px 40px 30px;
+}
+.menu__page{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.id__img{
+    width: 70%;
+}
+.searchdop{
+    background-color: #fff;
+    width: 208px;
+    height: 47px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.searchingdop{
+    padding: 0 30px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 47px;
+    border-radius: 90px;
+    
+}
+.search__txtdop{
+    outline: none;
+    font-size: 12px;
+    height: 35px;
+    width: 122px;
+    border-radius: 50px;
+    border: none;
+    font-family: "Rubik one";
+    transition: 0.3s;
+}
+.buttonsrdop{
+    background-color: #ffffff;
+    outline: none;
+    border-radius: 50px;
+    width: 50px;
+    border: none;
+    cursor: url(../assets/images/pointer.svg), pointer;
+}
+.button__headdop{
+    background-color: #5d018c;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Rubik one";
+}
+.buttonmmdop{
+    display: flex;
+    align-items: center;
+    background-color: #5d018c;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Rubik one"; 
+}
+
+
+.main{
+    padding-top: 150px;
+    background-image: url(../assets/images/bgreg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.registration{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.list__registr{
+    background-color: #2C3036;
+    padding: 30px 70px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.title__registr{
+    display: flex;
+    justify-content: center;
+}
+
+.field__registr{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.registr__txt{
+    outline: none;
+    border-style: solid;
+    border-color: #20252C;
+    border-width: 3px;
+    border-radius: 10px;
+    width: 470px;
+    height: 70px;
+    font-size: 16px;
+    padding-left: 20px;
+    font-family: "Rubik one";
+    background-color: #16191E;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.registration__butt{
+    display: flex;
+    justify-content: center;
+}
+.button__reg{
+    background-color: #8700CA;
+    transition: background-color 0.3s;
+    color: #ffffff;
+    font-family: "Rubik One";
+    border-radius: 10px;
+    width: 470px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.button__reg p{
+    font-size: 20px;
+}
+.button__reg:hover{
+    background-color: #b011ff;
+}
+.icons__registr{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 15px;
+}
+.img__reg{
+    display: flex;
+    justify-content: center;
+}
+.img__button{
+    background-color: #2C3036;
+}
+.button__registr{
+    display: flex;
+    justify-content: center;
+}
+.buttonreg{
+    font-family: "Rubik one";
+    background-color: #2C3036;
+    
+}
+.buttonreg:hover{
+    text-decoration: underline;
+    color: #8700CA;
+}
+.button__txt{
+    font-size: 18px;
+    background-color: #2C3036;
+    color: #8700CA;
+}
+.secret{
+    display: flex;
+    justify-content: center;
+}
+.click_here{
+    background-color: #2C3036;
+    color: #2C3036;
+}
+
+
+
+
+.footer{
+    background-color: #14120F;
+    background-size: cover;
+    padding: 36px 0 10px;
+    border-width: 5px;
+    border-color: #6e6e6e;
+    border-top-style: solid;
+}
+.social__list{
+    display: flex;
+    justify-content: space-between;
+}
+.mail__title{
+    display: flex;
+    justify-content: center;
+}
+.footer__txt{
+    font-size: 20px;
+}
+.mail__link a{
+    color: #A0A0A0;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.media__title{
+    display: flex;
+    justify-content: center;
+}
+
+.media__icons{
+    display: flex;
+    justify-content: center;
+}
+.media__link{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.werewolf p{
+    padding-top: 30px;
+    color: #403f3f;
+    font-size: 18px;
+}
+
+
+
+@font-face{
+    font-family: "Rubik one";
+    src: url(../assets/fonts/RubikOne-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media(max-width: 1210px){
+    .logo__img{
+        display: none;
+    }
+    .logo__img2{
+        display:flex;
+    }
+} 
+@media(max-width: 960px){
+    .search__txt{
+        width: 92px;
+    }
+    .search1{
+        width: 178px;
+    }
+}
+@media(max-width: 935px){
+    p{
+        font-size: 32px;
+    }
+    .button__head{
+        font-size: 20px;
+    }
+    .search1{
+        width: 138px;
+    }
+    .search__txt{
+        width: 52px;
+    }
+    .buttonmm{
+        font-size: 20px;
+    }
+   
+
+    .footer__txt{
+        font-size: 16px;
+    }
+    .mail__link a{
+        font-size: 16px;
+    }
+    .werewolf p{
+        font-size: 14px;
+    }
+}
+@media(max-width: 860px){
+    .logo__img2{
+        width: 80%;
+    }
+    .main{
+        padding-top: 130px;
+    }
+    .dropdown {
+        margin-top: 100px;
+    }
+    .buttonmm{
+        display: none;
+    }
+    .buttonmm2{
+        display: flex;
+    }
+    .button__head{
+        width: 80%;
+    }
+
+    .mail__title{
+        width: 250px;
+    }
+    .navigation{
+        gap: 15px;
+    }
+    .container{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+@media(max-width: 765px){
+    .search1{
+        display: none;
+    }
+    .search2{
+        display: flex;
+    }
+    .navigation{
+        gap: 10px;
+    }
+}
+@media(max-width: 690px){
+    .container{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .list__registr{
+        padding: 30px 50px;
+    }
+    .registr__txt{
+        width: 450px;
+    }
+    .button__reg{
+        width: 450px;
+    }
+}
+@media(max-width: 650px){
+    .registr__txt{
+        width: 410px;
+    }
+    .button__reg{
+        width: 410px;
+    }
+    .title__registr p{
+        font-size: 28px;
+    }
+}
+@media(max-width: 620px){
+    .menu__btn{
+        display: flex;
+    }
+    .product{
+        display: none;
+    }
+    .search2{
+        display: none;
+    }
+    .balance__pay{
+        display: none;
+    }
+    .link__registr{
+        display: none;
+    }
+
+    .footer__txt{
+        font-size: 16px;
+    }
+    .mail__title{
+        width: 180px;
+    }
+    .mail__link a{
+        font-size: 16px;
+    }
+    .media__link{
+        gap: 10px;
+    }
+}
+@media(max-width: 600px){
+   
+    .footer__txt{
+        font-size: 14px;
+    }
+    .mail__title{
+        width: 160px;
+    }
+    .mail__link a{
+        font-size: 14px;
+    }
+    .media__link{
+        gap: 10px;
+    }
+    .container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .registr__txt{
+        width: 390px;
+    }
+    .button__reg{
+        width: 390px;
+    }
+    .list__registr{
+        padding: 30px 40px;
+    }
+}
+@media(max-width: 540px){  
+    .container{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .registr__txt{
+        width: 360px;
+    }
+    .button__reg{
+        width: 360px;
+    }
+}
+@media(max-width: 500px){
+    .registr__txt{
+        width: 320px;
+    }
+    .button__reg{
+        width: 320px;
+    }
+    .social__list{
+        display: flex;
+        flex-direction: column;
+    }
+    .mail{
+        margin: 0 auto;
+    }
+    .footer__txt{
+        text-align: center;
+    }
+    .mail__link{
+        display: flex;
+        justify-content: center;
+    }
+    .help__link{
+        display: flex;
+        justify-content: center;
+    }
+    .werewolf{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media(max-width: 460px){
+    .logo__img2{
+        width: 70%;
+    }
+    .main{
+        padding-top: 110px;
+    }
+    .dropdown {
+        margin-top: 90px;
+    }
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .registr__txt{
+        width: 280px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .button__reg{
+        width: 280px;
+        height: 40px;
+    }
+    .button__reg p{
+        font-size: 16px;
+    }
+    .title__registr p{
+        font-size: 24px;
+    }
+    .list__registr{
+        padding: 30px 30px;
+    }
+    .button__txt{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 380px){
+    .title__registr p{
+        font-size: 20px;
+    }
+    .registr__txt{
+        width: 260px;
+    }
+    .button__reg{
+        width: 260px;
+    }
+    .list__registr{
+        padding: 30px 10px;
+    }
+}
+@media(max-width: 320px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .registr__txt{
+        width: 240px;
+    }
+    .button__reg{
+        width: 240px;
+    }
+}
