@@ -1,0 +1,222 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+body{
+    background-color: #232325;
+    font-family: "Dela Gothic One";
+    margin: 0;
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+button{
+    font-family: "Dela Gothic One";
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #424242;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #646262;
+    ;
+    border-radius: 3px;
+}
+.container{
+    max-width: 1480px;
+    margin: 0 auto;
+    padding-left: 190px;
+    padding-right: 190px;
+}
+.header{
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 999;
+    background-color: #232325;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.header__inner{
+    padding: 20px 0 20px 0;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__logo{
+    font-size: 24px;
+}
+.menu__links{
+    display: flex;
+    align-items: center;
+    gap: 65px;
+   
+}
+
+.menu__icon{
+    background-color: #C1FF7F;
+    border-radius: 60px;
+    width: 40px;
+    height: 40px;
+    color: #83AE56;
+    font-size: 14px;
+}
+
+
+
+
+.main{
+    padding-top: 100px;
+}
+
+.dropdown{
+    position: fixed;
+    top: 0;
+    margin-top: 80px;
+    right: 190px;
+    background-color: #3D3E4D;
+    border-radius: 0 0 20px 20px;
+    z-index: 998;
+    display: none;
+}
+.menu__info{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 30px 40px;
+}
+.menu__info__link{
+    padding-top: 10px;
+}
+
+
+.title__profile{
+    padding-top: 50px;
+}
+.title__profile span{
+    font-size: 24px;
+}
+.list__info__title{
+    padding-bottom: 30px;
+}
+.list__info__title span{
+    font-size: 24px;
+}
+.profile__holder{
+    display: flex;
+    padding-top: 50px;
+}
+.profile__list{
+    background-color: #2E2E35;
+    padding: 24px 310px 24px 33px;
+    border-radius: 20px 0 20px 0;
+}
+.profile__list{
+    display: flex;
+    gap: 40px;
+}
+.names{
+    font-size: 36px;
+}
+.aa{
+    display: flex;
+    gap: 10px;
+}
+.years{
+    font-size: 24px;
+}
+.profile__holder__info{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 140px;
+}
+.profile__info{
+    background-color: #2E2E35;
+    padding: 24px 33px 30px 33px;
+    border-radius: 20px 0 20px 0;
+}
+.list__info{
+    display: flex;
+    gap: 150px;
+}
+.form__group{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.form__group__save{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+}
+.form__group label{
+    padding-bottom: 10px;
+}
+.form__text{
+    width: 420px;
+    height: 60px;
+    padding-left: 20px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #3D3E4D;
+    background-color: inherit;
+    outline-color: #C1FF7F;
+    color: #ffffff;
+    font-family: "Dela Gothic One";
+}
+.save__button{
+    background-color: #3561FF;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 20px 34px;
+    width: 200px;
+    font-family: "Dela Gothic One";
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+.footer{
+    padding: 10px 0 50px 0;
+    background-color: inherit;
+}
+.title__icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 5px;
+}
+.text__icon{
+    color: #4E4E4E;
+    font-size: 24px;
+}
+.text__year{
+    color: #4E4E4E;
+    font-size: 20px;
+}
+
+
+@font-face{
+    font-family: "Dela Gothic One";
+    src: url(../assets/fonts/DelaGothicOne-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
