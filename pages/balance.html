@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werewolf</title>
+    <link rel="stylesheet" href="../styles/stylebalance.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <nav class="menu">
+                    <div class="logo">
+                        <a href="../index.html" class="logo__img"><img src="../assets/images/logo.svg" alt=""></a>
+                        <a href="../index.html" class="logo__img2"><img src="../assets/images/logo2.svg" alt=""></a>
+                    </div>
+                    <div class="product">
+                        <a href="./catalog.html"><button class="button__head">ТОВАРЫ</button></a>
+                    </div>
+
+                    <div class="navigation">
+                        <div class="search1">
+                            <div class="searching">
+                                <input type="text" class="search__txt" placeholder="Поиск">
+                                <button class="buttonsr">
+                                    <img src="../assets/images/Search.svg" alt="поиск">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="search2">
+                                <button class="buttonsr2">
+                                    <img src="../assets/images/Search.svg" alt="поиск">
+                                </button>
+                        </div>
+    
+                        <div class="balance__pay">
+                            <a href="./balance.html">
+                                <button class="buttonmm">БАЛАНС:0 <img src="../assets/images/gem.svg" alt=""></button>
+                                <button class="buttonmm2">0 <img src="../assets/images/gem.svg" alt=""></button>
+                            </a>
+                        </div>
+                       
+                        <div class="link__registr">
+                            <a href="./registr.html" class="menu__link"> <button class="button__head"> <img src="../assets/images/id.svg" alt="войти"></button></a>
+                        </div>
+                    </div>
+                    <button class="menu__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div id="dropdown" class="dropdown">
+            <div  class="menu__list">
+              <div class="menu__page">
+                <div class="searchdop">
+                  <div class="searchingdop">
+                      <input type="text" class="search__txtdop" placeholder="Поиск">
+                      <button class="buttonsrdop">
+                          <img src="../assets/images/Search.svg" alt="поиск">
+                      </button>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__page">
+                <a href="./catalog.html"><button class="button__headdop">ТОВАРЫ</button></a>
+              </div>
+              <div class="menu__page">
+                <a href="./balance.html"><button class="buttonmmdop">БАЛАНС</button> </a>
+              </div>
+              <div class="menu__page">
+                <a href="./registr.html" class="menu__link"> <button class="button__headdop"> <img class="id__img" src="../assets/images/id.svg" alt="войти"></button></a>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="pay__list">
+                <div class="balance__list">
+                    <div class="balance__title">
+                       <span> БАЛАНС:0</span>
+                        <img src="../assets/images/gem.svg" alt="">
+                    </div>
+                    <div class="balance__menu__title">
+                        <div class="balance__txt">
+                            <p>Пополнить счет</p>
+                        </div>
+                        <div class="balance__menu">
+                            <div class="field__registr">
+                                <form  class="name"action="#">
+                                    <input type="text" class="registr__txt" type="text" placeholder="Логин">
+                                </form>
+                            </div>
+                            <div class="field__registr">
+                                <form  class="name" action="#">
+                                    <input type="text" class="registr__txt" type="text" id="output" placeholder="Введите сумму пополнения">
+                                </form>
+                            </div>
+                            <div class="buttons__balance">
+                                <button class="balancebutt1" data-number="300">300</button>
+                                <button class="balancebutt2"  data-number="500">500</button>
+                                <button class="balancebutt3" data-number="1000">1000</button>
+                                <button class="balancebutt4" data-number="2000">2000</button>
+                            </div>
+                            <div class="field__registr">
+                                <form  class="name"action="https://i.pinimg.com/736x/dc/aa/a0/dcaaa0bf321b6318daf3d019ed14b592.jpg">
+                                    <input type="text" class="registr__txt" type="text" placeholder="Введите ваш email">
+                                </form>
+                            </div>
+                            <div class="button__refill">
+                                <button class="refillbutt">Пополнить баланс</button>
+                            </div>
+                            <div class="agreement">
+                               <div class="agreement__list">
+                                    <label class="agreement__text">
+                                        <input type="checkbox" class="real__checkbox" checked>
+                                        <span class="custom__checkbox"></span>
+                                        <span class="check__txt">Я ознакомлен и согласен с условиями пользовательского соглашения и правилами возврата</span>
+                                    </label>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="social">
+                <nav class="social__list">
+                    <div class="mail">
+                        <div class="mail__title">
+                            <p class="footer__txt">Остались вопросы? Напишите нам на почту:</p>
+                        </div>
+                        <div class="mail__link">
+                            <a href="#">werewolf@mail.ru</a>
+                        </div>
+                        <div class="help__link">
+                            <a href="#"><p class="footer__txt">поддержка</p></a>
+                        </div>
+                    </div>
+
+                    <div class="media">
+                        <div class="media__title">
+                            <p class="footer__txt">Наши социальные сети:</p>
+                        </div>
+                        <div class="media__icons">
+                            <div class="media__link">
+                                <a href="#"><img src="../assets/images/vk.png" alt=""></a>
+                                <a href="#"><img src="../assets/images/tg.png" alt=""></a>
+                                <a href="#"><img src="../assets/images/zen.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+            <div class="werewolf">
+                <p>(c) Werewolf, 2025</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts/scriptbalance.js"></script>
+</body>
+</html>
