@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werewolf</title>
+    <link rel="stylesheet" href="../styles/styleregistr.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="../index.html" class="logo"><img src="../assets/images/logo.svg" alt=""></a>
+                    <a href="../index.html" class="logo2"><img src="../assets/images/logo2.svg" alt=""></a>
+                    <button class="menu__btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                    </button>
+                    <div class="menu__inner">
+                        <button class="closeMobile-btn"><img src="../assets/images/close-btn.svg" alt=""></button>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="./catalog.html" class="menu__link">ТОВАРЫ</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="./balance.html" class="menu__link balance-link">БАЛАНС:0</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="menu__user-nav">
+                            <form action="" class="searching__form">
+                            <input type="search" class="searching__input" placeholder="Поиск">
+                            <button class="searching__btn"><img src="../assets/images/Search.svg" alt=""></button>
+                            </form>
+                            <a href="#" class="searching__link"><img src="../assets/images/Search.svg" alt=""></a>
+                            <a href="./registr.html" class="user__link"><img src="../assets/images/id.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main"> 
+            <section class="registration">
+                <div class="container">
+                    <div class="registration__list">
+                        <div class="registration__inner">
+                            <div class="title">
+                                <h2>РЕГИСТРАЦИЯ</h2>
+                            </div>
+                            <form action="" class="registration__form">
+                                <input type="text" placeholder="Логин">
+                                <input type="password" autocomplete="on" placeholder="Введите пароль">
+                                <input type="submit" value="Вход">
+                            </form>
+                            <div class="registration__media">
+                                <a href="#" class="registration__media-link"><img src="../assets/images/vk_reg.svg" alt=""></a>
+                                <a href="#" class="registration__media-link"><img src="../assets/images/tg_reg.svg" alt=""></a>
+                            </div>
+                            <div class="registration__logIn">
+                                <a href="./registr.html" class="registration__link">Ещё не зарегистрировались?</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../scripts/registration.js"></script>
+</body>
+</html>

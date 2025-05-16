@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werewolf</title>
+    <link rel="stylesheet" href="../styles/stylebalance.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="../index.html" class="logo"><img src="../assets/images/logo.svg" alt=""></a>
+                    <a href="../index.html" class="logo2"><img src="../assets/images/logo2.svg" alt=""></a>
+                    <button class="menu__btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                    </button>
+                    <div class="menu__inner">
+                        <button class="closeMobile-btn"><img src="../assets/images/close-btn.svg" alt=""></button>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="./catalog.html" class="menu__link">ТОВАРЫ</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="./balance.html" class="menu__link balance-link">БАЛАНС:0</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="menu__user-nav">
+                            <form action="" class="searching__form">
+                            <input type="search" class="searching__input" placeholder="Поиск">
+                            <button class="searching__btn"><img src="../assets/images/Search.svg" alt=""></button>
+                            </form>
+                            <a href="#" class="searching__link"><img src="../assets/images/Search.svg" alt=""></a>
+                            <a href="./registr.html" class="user__link"><img src="../assets/images/id.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="balance">
+                <div class="container">
+                    <div class="balance__list">
+                       <div class="balance__inner">
+                            <form action="" class="balance__form">
+                                <input class="balance__input" type="text" autocomplete="on" placeholder="Логин" >
+                                <input class="balance__input" type="password" autocomplete="on" placeholder="Пароль" >
+                                <input class="balance__input" type="number" id="output" placeholder="Сумма">
+                            </form>
+                            <div class="pay__btn">
+                                <button class="num_1" data-number="300">300</button>
+                                <button class="num_2" data-number="500">500</button>
+                                <button class="num_3" data-number="1000">1000</button>
+                                <button class="num_4" data-number="1500">1500</button>
+                            </div>
+                            <input type="submit" value="пополнить баланс" class="balance__btn">
+                            <label class="agreement__text">
+                                <input type="checkbox" class="real__checkbox" checked>
+                                <span class="custom__checkbox"></span>
+                                <span class="check__txt">Я ознакомлен и согласен с условиями пользовательского соглашения и правилами возврата</span>
+                            </label>
+                       </div>
+                       <h2 class="balance__title">БАЛАНС:0</h2>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="social__list">
+                        <ul class="social__inner">
+                            <li class="social__item">
+                                <p class="footer__txt">Остались вопросы? Напишите нам на почту:</p>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="footer__link">werewolf@mail.ru</a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="footer__txt">поддержка</a>
+                            </li>
+                        </ul>
+
+                        <ul class="social__inner">
+                            <li class="social__item social-title">
+                                <p class="footer__txt">Наши социальные сети:</p>
+                            </li>
+                            <li class="social__item media__list">
+                                <a href="#"><img src="../assets/images/vk.svg" alt=""></a>
+                                <a href="#"><img src="../assets/images/tg.svg" alt=""></a>
+                                <a href="#"><img src="../assets/images/zen.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                <div class="werewolf">
+                    <p>(c) Werewolf, 2025</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../scripts/balance.js"></script>
+</body>
+</html>
